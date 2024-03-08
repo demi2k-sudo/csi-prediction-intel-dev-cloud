@@ -1,0 +1,5 @@
+wav2vec2_checkpoint
+pretrained_models
+__pycache__
+.env
+audio_calls
