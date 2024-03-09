@@ -114,7 +114,7 @@ Start the streamlit server>>>>>>
 </p>
 
 <p align="center">
-  <img width="auto" height="auto" src="https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/d75555d7-4fb9-4fcb-ab07-03c5da058ba9">
+  <img width="auto" height="auto" src="https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/b219abaf-e370-4889-bbc6-2d365aa1f080">
 </p>
 
 <p align="center">
@@ -124,6 +124,7 @@ Start the streamlit server>>>>>>
 <p align="center">
   <img width="auto" height="auto" src="https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/844a27fb-8723-4121-aa23-489197c37638">
 </p>
+
 
 
 
