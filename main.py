@@ -9,8 +9,14 @@ class csi:
         self.gpt = HF_LLM(model_name)
         self.transcriptor = Transcriptor()
 
-    def process(self, audio):
+    def process(self, path):
+        emotions = get_emotion(path)
+        transcripts = self.transcriptor.transcribe(path)
+        result = self.gpt.generate_response(transcripts, emotions)
+        return result
+
+    def process_return_with_transcripts(self, audio):
         emotions = get_emotion(audio)
         transcripts = self.transcriptor.transcribe(audio)
         result = self.gpt.generate_response(transcripts, emotions)
-        return result
+        return result,transcripts
