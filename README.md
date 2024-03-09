@@ -107,11 +107,12 @@ Start the streamlit server>>>>>>
 <blockquote>
   streamlit run gui_new.py
 </blockquote>
-<br/>
-**BenchMark**
+
+## BenchMark ##
 <p align="center">
-  <img width="auto" height="auto" src="https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/7107a9ea-261a-4033-9af3-36f7c631bb54>
+  <img width="auto" height="auto" src="https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/e4ff0a94-a636-4bbe-9f12-d7d23ac5ee75">
 </p>
+
 
 
 **Screenshots**
