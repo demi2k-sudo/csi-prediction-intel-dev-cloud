@@ -108,6 +108,15 @@ Start the streamlit server>>>>>>
   streamlit run gui_new.py
 </blockquote>
 
+**Screenshots**
+![IMG_2983](https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/3a8f5c96-57af-4dad-8793-7e3539790a7d)
+![IMG_2984](https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/844a27fb-8723-4121-aa23-489197c37638)
+![IMG_3005](https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/e0dd3662-f0d5-4e32-97a3-7246adea7c60)
+![IMG_3004](https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/cda67b97-6aee-4fe4-8964-1a55e441c6ef)
+![IMG_3003](https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/d1172d88-e096-4965-b682-f5b76c60bf23)
+![IMG_3006](https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/d75555d7-4fb9-4fcb-ab07-03c5da058ba9)
+
+
 
 
 
