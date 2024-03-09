@@ -109,7 +109,10 @@ Start the streamlit server>>>>>>
 </blockquote>
 <br/>
 **BenchMark**
-![tokens_per_second_comparison](https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/7107a9ea-261a-4033-9af3-36f7c631bb54)
+<p align="center">
+  <img width="auto" height="auto" src="https://github.com/demi2k-sudo/csi-prediction-intel-dev-cloud/assets/85375873/7107a9ea-261a-4033-9af3-36f7c631bb54>
+</p>
+
 
 **Screenshots**
 <p align="center">
