@@ -24,7 +24,7 @@ class HF_LLM:
         inputs = self.tokenizer.encode(prompt, return_tensors="pt", add_special_tokens=False)
 
         # Generate a response
-        outputs = self.model.generate(inputs, max_length=10000, num_return_sequences=1)
+        outputs = self.model.generate(inputs, max_length=100000, num_return_sequences=1)
         response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
 
         # Extract only the assistant's response

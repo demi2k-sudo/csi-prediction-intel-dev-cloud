@@ -8,9 +8,9 @@ from streamlit_chat import message
 import transformers
 
 if "tokeniser" not in st.session_state:
-    st.session_state.tokeniser = None
+    st.session_state.tokeniser = transformers.AutoTokenizer.from_pretrained("Intel/neural-chat-7b-v3-3")
 if "model" not in st.session_state:
-    st.session_state.model = None
+    st.session_state.model = transformers.AutoModelForCausalLM.from_pretrained("Intel/neural-chat-7b-v3-3")
 if "result" not in st.session_state:
     st.session_state.result = None
 if "transcripts" not in st.session_state:
@@ -42,7 +42,7 @@ def main():
             with open("temp.wav", "wb") as f:
                 f.write(content)
             # Initialize the csi object with the API key
-            app = csi('Intel/neural-chat-7b-v3-3')
+            app = csi('Intel/neural-chat-7b-v3-3',st.session_state.model,st.session_state.tokeniser)
             # Process the audio file
             st.session_state.result,st.session_state.transcripts = app.process_return_with_transcripts("temp.wav")
             
@@ -56,9 +56,7 @@ def main():
     if page == "Chat":
         
         
-        model_name = "Intel/neural-chat-7b-v3-3"
-        st.session_state.model = transformers.AutoModelForCausalLM.from_pretrained(model_name)
-        st.session_state.tokeniser = transformers.AutoTokenizer.from_pretrained(model_name)
+        
             
         
         st.session_state.messages = [f"### System:You are a customer service expert\n### User:{st.session_state.transcripts}\n### Assistant:{st.session_state.result}"]
