@@ -14,8 +14,8 @@ class HF_LLM:
 
     def generate_response(self, transcripts, emotions, system_input="You are a Customer Service expert!" ):
 
-        example = "Communication: 8.5/10 Resolution: 8/10 Emotion Handling: 7/10. So, the overall Customer Satisfaction Index can be calculated as the average of these three scores, which is approximately 7.8/10."
-        user_input = f"I will provide you with the transcripts of a customer service call. I will also provide you the tone of the voices at each timestamp.('a': Anger 'h': Happy 'n': Neutral) You have to analyse both and come up with a Customer Satisfaction Index<Transcripts of the talks>\n{transcripts}<Transcripts of the talks\>\n<Tone and emotion of the voice>\n{emotions}<\Tone and emotion of the voice>\n<Example>\n{example}<Example\>"
+        example = "Communication: z/10 Resolution: y/10 Emotion Handling: x/10. So, the overall Customer Satisfaction Index can be calculated as the average of these three scores, which is approximately x+y+z/10."
+        user_input = f"I will provide you with the transcripts of a customer service call. I will also provide you the tone of the voices at each timestamp.('a': Anger 'h': Happy 'n': Neutral) You have to analyse both and come up with a Customer Satisfaction Index. You should also give reason why..\n<Transcripts of the talks>\n{transcripts}<Transcripts of the talks\>\n<Tone and emotion of the voice>\n{emotions}<\Tone and emotion of the voice>\n<Example>\n{example}<Example\>"
 
         # Format the input using the provided template
         prompt = f"### System:\n{system_input}\n### User:\n{user_input}\n### Assistant:\n"

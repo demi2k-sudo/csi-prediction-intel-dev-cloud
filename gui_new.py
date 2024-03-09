@@ -22,13 +22,40 @@ if "conmessages" not in st.session_state:
     st.session_state.conmessages = []
 
 
-def main():
+background_image_style = """
+<style>
+.st-emotion-cache-13k62yr {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/portfolio-215a2.appspot.com/o/black_needles_hd_black_aesthetic-1920x1080.jpg?alt=media&token=c8bfc311-8f3a-44ff-9bf0-d36876016842');
+    background-size: cover;
+}
+.st-emotion-cache-1cypcdb {
+    background-color: rgb(0 0 0);
+}
+.st-emotion-cache-4rht51 {
+    background-color: rgb(0 0 0);
+}
 
+.st-emotion-cache-1erivf3{
+    background: rgb(0 0 0);
+}
+.st-emotion-cache-1avcm0n{
+    background: rgb(0 0 0);
+}
+</style>
+"""
+
+# Render the background image using st.markdown
+st.markdown(background_image_style, unsafe_allow_html=True)
+
+#st.markdown(page_bg_img, unsafe_allow_html=True)
+
+def main():
+    
     # Add pages to the app
     st.sidebar.title("Navigation")
-    page = st.sidebar.selectbox("What you wanna do today?", ["Upload Audio", "Chat"])
+    page = st.sidebar.selectbox("Upload audio before going to the chat menu.", ["Upload Audio", "Chat"])
     st.write("Team Quixotic Sapiens")
-    st.title("Speech Data Analysis")
+    st.title("Customer service Analysis")
 
     if page == "Upload Audio":
 
@@ -59,7 +86,7 @@ def main():
         
             
         
-        st.session_state.messages = [f"### System:You are a customer service expert\n### User:{st.session_state.transcripts}\n### Assistant:{st.session_state.result}"]
+        st.session_state.messages = [f"### System:You are a customer service expert that gets the transcription of user calls and then gives a report on it. then you answer queries from the user on how he can improve. Note: user is the customer service official\n### User:{st.session_state.transcripts}\n### Assistant:{st.session_state.result}"]
         
         # with st.sidebar:
         user_input = st.text_input("Your message: ", key="user_input")

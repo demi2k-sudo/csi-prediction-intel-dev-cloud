@@ -62,7 +62,7 @@ def sendmail(recipent,subject,content):
 def assess(user_input, model, tokenizer):
     template = '''***official("Johnny showed unprofessional behavior at the beginning of the call by using inappropriate language and taking a long time, later he gave a contact information.")***'''
 
-    system_input = f'''You are the customer service supervisor. You should look at call transcripts and then see if there is any issue. if there is a issue in product you should say "{template}". if there is a issue with the customer service official you should say "***official("the problem description")***" . like what you say using the before rules must be enclosed with three asterisks before and after. the problem description between the parantheses be elaborate in explaining the problem and why it happened '''
+    system_input = f'''You are the customer service supervisor. You should look at call transcripts and then see if there is any issue. if there is a issue in product you should say "{template}". if there is a issue with the customer service official you should say "***official("the problem description")***" . like what you say using the before rules must be enclosed with three asterisks before and after. the problem description between the parantheses be very much elaborate with details in explaining the problem and why it happened '''
     response = generate_response(model, tokenizer, system_input, user_input)
     queries = prompt_remover(response)
     print(response)
