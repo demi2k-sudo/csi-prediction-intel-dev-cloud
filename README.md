@@ -76,6 +76,8 @@ We forward port:8888 to access Jupyter notebooks for development and port:8501 f
 
 <blockquote>
   ssh 8888:localhost:8888 xyz@xyz xyz@xyz
+</blockquote>
+<blockquote>
   ssh 8501:localhost:8501 xyz@xyz xyz@xyz
 </blockquote>
 
