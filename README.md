@@ -76,7 +76,7 @@ We forward port:8888 to access Jupyter notebooks for development and port:8501 f
 
 ## Overview ##
 
-**gui_new.py**
+**gui_final.py**
 This script serves as the main entry point for the Streamlit application. It provides a user interface for uploading audio files of customer service calls and interacting with the system. The significance of this file lies in its ability to seamlessly integrate various functionalities and provide a user-friendly interface for users to analyze customer service calls.
 
 **main.py**
@@ -105,7 +105,7 @@ Install all the necessary libraries needed using pip/pip3
 Start the streamlit server>>>>>>
 
 <blockquote>
-  streamlit run gui_new.py
+  streamlit run gui_final.py
 </blockquote>
 
 ## BenchMark ##
