@@ -74,6 +74,11 @@ Also we use Secure shell to forward the necessary ports from our VM to local mac
 
 We forward port:8888 to access Jupyter notebooks for development and port:8501 for accessing streamlit UI.
 
+<blockquote>
+  ssh 8888:localhost:8888 xyz@xyz xyz@xyz
+  ssh 8501:localhost:8501 xyz@xyz xyz@xyz
+</blockquote>
+
 ## Overview ##
 
 **gui_final.py**
